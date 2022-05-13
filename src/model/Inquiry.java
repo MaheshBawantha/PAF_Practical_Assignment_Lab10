@@ -54,7 +54,7 @@ public class Inquiry {
 			if (con1 == null) 
 			{return "Error while connecting to the database for reading."; } 
 			// Prepare the html table to be displayed
-			output = "<table border='1'><tr><th>Account No</th><th>Name</th>" +
+			output = "<table class='table table-dark table-hover'><tr><th>Account No</th><th>Name</th>" +
 					"<th>Contact No</th>" + 
 					"<th>email</th>" +
 					"<th>Inquiry Details</th>" +
@@ -79,8 +79,8 @@ public class Inquiry {
 				output += "<td>" + email + "</td>";
 				output += "<td>" + inquiryDet + "</td>";
 				// buttons
-				output += "<td><input name='btnUpdate' type='button' value='Update' class='btnUpdate btn btn-secondary' data-inquiryid='"+inquiryID+"'></td>"
-						+ "<td><input name='btnRemove' type='button' value='Remove' class='btnRemove btn btn-secondary' data-inquiryid='"+inquiryID+"'></td></tr>"; 
+				output += "<td><input name='btnUpdate' type='button' value='Update' class='btnUpdate btn btn-outline-warning' data-inquiryid='"+inquiryID+"'></td>"
+						+ "<td><input name='btnRemove' type='button' value='Remove' class='btnRemove btn btn-outline-danger' data-inquiryid='"+inquiryID+"'></td></tr>"; 
 			} 
 			con1.close(); 
 			// Complete the html table

@@ -32,7 +32,7 @@ console.log(type);
  $.ajax(
  {
  url : "InquiriesAPI",
- type : "PUT",
+ type : type,
  data : $("#formItem").serialize(),
  dataType : "text",
  complete : function(response, status)
