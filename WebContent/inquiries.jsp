@@ -13,8 +13,9 @@
 <body>
 	<div class="container">
 		<div class="row">
+		<div class= "col-3"></div>
 			<div class="col-6">
-				<h1>Inquiry Management</h1>
+				<h1 style="margin-left: 70px;">Inquiry Management</h1><br>
 				<form id="formItem" name="formItem">
 					Account num: <input id="accountNum"
 						name="accountNum" type="text" class="form-control form-control-sm"> <br>
@@ -26,13 +27,17 @@
 						class="form-control form-control-sm"> <br> Inquiry: <input
 						id="inquiryDet" name="inquiryDet" type="text"
 						class="form-control form-control-sm"> <br> <input id="btnSave"
-						name="btnSave" type="button" value="Save" class="btn btn-primary"> <input type="hidden" id="hidInquiryIDSave" name="hidInquiryIDSave"
+						name="btnSave" type="button" value="Save" class="btn btn-primary btn-lg"> <input type="hidden" id="hidInquiryIDSave" name="hidInquiryIDSave"
 						value="">
 				</form>
 				<br>
 				<div id="alertSuccess" class="alert alert-success"></div>
 				<div id="alertError" class="alert alert-danger"></div>
 				<br>
+				
+			</div>
+		</div>
+		
 				<div id="divItemsGrid">
 				<%
 				Inquiry inquiryObj = new Inquiry();
@@ -41,8 +46,6 @@
 				
 	
 				</div>
-			</div>
-		</div>
 	</div>
 </body>
 <script src="Components/jquery.min.js" type="text/javascript"></script>

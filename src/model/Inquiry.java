@@ -88,7 +88,7 @@ public class Inquiry {
 		} 
 		catch (Exception e) 
 		{ 
-			output = "Error while reading the inquiries."; 
+			output = "Error while reading the inquiry."; 
 			System.err.println(e.getMessage()); 
 		} 
 		return output; 
@@ -123,7 +123,7 @@ public class Inquiry {
 		} 
 		catch (Exception e) 
 		{ 
-			output =  "{\"status\":\"error\", \"data\": \"Error while updating the item.\"}";
+			output =  "{\"status\":\"error\", \"data\": \"Error while updating the inquiry.\"}";
 			System.err.println(e.getMessage()); 
 		} 
 		return output; 
@@ -151,7 +151,7 @@ public class Inquiry {
 		} 
 		catch (Exception e) 
 		{ 
-			output =  "{\"status\":\"error\", \"data\": \"Error while deleting the item.\"}";
+			output =  "{\"status\":\"error\", \"data\": \"Error while deleting the inquiry.\"}";
 			System.err.println(e.getMessage()); 
 		} 
 		return output; 
