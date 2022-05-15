@@ -9,6 +9,9 @@ public class Inquiry {
 	
 	public String insertInquiry(String accNo, String name, String contact, String email, String det) 
 	{ 
+		//This one only for test purpose
+		System.out.println("Came to INSERT function in inquiry.java");
+		
 		String output = ""; 
 		try
 		{ 
@@ -46,6 +49,9 @@ public class Inquiry {
 	} 
 	public String readInquiries() 
 	{ 
+		//This one only for test purpose
+		System.out.println("Came to READ function in inquiry.java");
+		
 		String output = ""; 
 		try
 		{ 
@@ -96,7 +102,9 @@ public class Inquiry {
 	public String updateInquiry(String id, String accNo, String name, String contact, String email, String det) 
 
 	{ 
-		System.out.println("came here as well");
+		//This one only for test purpose
+		System.out.println("Came to UPDATE function in inquiry.java");
+		
 		String output = ""; 
 		try
 		{ 
@@ -130,6 +138,9 @@ public class Inquiry {
 	} 
 	public String deleteInquiry(String inquiryID) 
 	{ 
+		//This one only for test purpose
+		System.out.println("Came to DELETE function in inquiry.java");
+		
 		String output = ""; 
 		try
 		{ 

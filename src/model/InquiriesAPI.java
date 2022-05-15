@@ -33,7 +33,9 @@ public class InquiriesAPI extends HttpServlet {
 
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println("come to post");
+		//This one only for test purpose
+		System.out.println("Came to POST METHOD in inquiryiesAPI");
+		
 		Inquiry Inquiry = new Inquiry();
 		String output = Inquiry.insertInquiry(request.getParameter("accountNum"),
 				 request.getParameter("Name"),
@@ -46,7 +48,9 @@ public class InquiriesAPI extends HttpServlet {
 
 	
 	protected void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println("came here");
+		//This one only for test purpose
+		System.out.println("Came to PUT METHOD in inquiryiesAPI");
+		
 		Inquiry Inquiry = new Inquiry();
 		// TODO Auto-generated method stub
 		Map paras = getParasMap(request);
@@ -63,6 +67,9 @@ public class InquiriesAPI extends HttpServlet {
 
 	
 	protected void doDelete(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		//This one only for test purpose
+		System.out.println("Came to DELETE METHOD in inquiryiesAPI");
+		
 		// TODO Auto-generated method stub
 		Inquiry Inquiry = new Inquiry();
 		Map paras = getParasMap(request);
@@ -73,6 +80,8 @@ public class InquiriesAPI extends HttpServlet {
 	// Convert request parameters to a Map
 	private static Map getParasMap(HttpServletRequest request)
 		{
+		//This one only for test purpose
+		System.out.println("Came to MAP FUNCTION in inquiryiesAPI");
 			Map<String, String> map = new HashMap<String, String>();
 	try
 	 	{
